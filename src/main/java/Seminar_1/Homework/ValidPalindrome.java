@@ -1,5 +1,5 @@
 package Seminar_1.Homework;
-
+//Given a string s, return true if it is a palindrome, or false otherwise.
 public class ValidPalindrome {
     public static void main(String[] args) {
         String s = "0p";
