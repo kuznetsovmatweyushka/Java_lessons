@@ -27,9 +27,13 @@ public class Cat {
 
     @Override
     public boolean equals(Object obj) {
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
         Cat cat = (Cat) obj;
         return age == cat.age && color == cat.color && catId == cat.catId && name.equals(cat.name);
     }
+
 
     @Override
     public int hashCode() {
@@ -53,7 +57,7 @@ public class Cat {
             System.out.println(cat);
         }
 
-        System.out.println(cat2.equals(cat3));
+        System.out.println(cat2.equals(cat1));
 
         for (var cat : setCat) {
             System.out.println(cat.hashCode());
