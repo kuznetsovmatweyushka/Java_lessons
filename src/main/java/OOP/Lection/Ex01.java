@@ -1,4 +1,4 @@
-package Lection;
+package OOP.Lection;
 
 import java.util.Arrays;
 import java.util.HashSet;

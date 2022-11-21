@@ -1,4 +1,4 @@
-package Lection;
+package OOP.Lection;
 
 public class Worker {
     int id;

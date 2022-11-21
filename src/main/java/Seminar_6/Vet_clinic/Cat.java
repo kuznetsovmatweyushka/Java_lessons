@@ -1,16 +1,14 @@
 package Seminar_6.Vet_clinic;
 
-import java.awt.*;
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 
 public class Cat {
-    String name;
-    int age;
-    String color;
+    private String name;
+    private int age;
+    private String color;
 
-    int catId;
+    private int catId;
 
     public Cat(String name, int age, String color, int catId) {
         this.name = name;
@@ -19,10 +17,29 @@ public class Cat {
         this.catId = catId;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public int getCatId() {
+        return catId;
+    }
+
+    private String getInfo() {
+        return "Кошачий ID: " + catId + " | " + " Кличка: " + name + " | " + " Возраст: " + age + " месяц(а)." + " | " + " Цвет: " + color + ".";
+    }
 
     @Override
     public String toString() {
-        return "Кошачий ID: " + catId + " | " + " Кличка: " + name + " | " + " Возраст: " + age + " месяц(а)." + " | " + " Цвет: " + color + ".";
+        return getInfo();
     }
 
     @Override
@@ -57,7 +74,7 @@ public class Cat {
             System.out.println(cat);
         }
 
-        System.out.println(cat2.equals(cat1));
+        System.out.println(cat2.equals(cat3));
 
         for (var cat : setCat) {
             System.out.println(cat.hashCode());
