@@ -13,10 +13,6 @@ public class Human implements CaseAction{
         return name;
     }
 
-    public void openCase(Case cse){
-
-    }
-
     @Override
     public void hideInCase(Case cse) {
         if(Case.condition == "open"){

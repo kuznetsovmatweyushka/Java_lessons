@@ -26,6 +26,7 @@ public class app {
         fam1.getFamily(fam);
         System.out.println();
         fam1.getGrMa(fam);
+        System.out.println();
         Case case1 = new Case(Case.condition);
         h1.opnCase(case1);
         h1.closeCase(case1);
