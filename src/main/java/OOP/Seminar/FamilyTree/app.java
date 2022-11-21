@@ -1,4 +1,4 @@
-package OOP.Seminar;
+package OOP.Seminar.FamilyTree;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -23,12 +23,14 @@ public class app {
         fam1.doFamily(fam,h5,"grma");
         fam1.doFamily(fam,h6,"grfa");
         fam1.doFamily(fam,h7,"grfa");
-        Research r = new Research();
-        r.getFamily(fam);
-        Case case1 = new Case("closed");
-        h2.openCase(case1);
+        fam1.getFamily(fam);
+        System.out.println();
+        fam1.getGrMa(fam);
+        Case case1 = new Case(Case.condition);
+        h1.opnCase(case1);
+        h1.closeCase(case1);
         h1.hideInCase(case1);
-        h2.openCase(case1);
+        h2.closeCase(case1);
     }
 }
 
